@@ -12,9 +12,9 @@ public class Task_02 {
             if (minValue > intArray[i]) minValue = intArray[i];
             if (maxValue < intArray[i]) maxValue = intArray[i];
             avgValue += intArray[i];
-            System.out.println("intArray[" + i +"] = " + intArray[i]);
+            System.out.println("intArray[" + i + "] = " + intArray[i]);
         }
-        avgValue = avgValue/10;
+        avgValue = avgValue / 10;
         System.out.println("minValue = " + minValue + ",   maxValue = " + maxValue + ",   avgValue = " + avgValue);
     }
 }
