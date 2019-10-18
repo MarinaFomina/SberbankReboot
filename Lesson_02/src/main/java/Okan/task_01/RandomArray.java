@@ -1,9 +1,8 @@
-package main.java.Okan;
+package main.java.Okan.task_01;
 
 public class RandomArray {
 
     private static final int COUNT = 9;
-
     public static void main(String[] args) {
         double[] ranar;
         double minz = 0.0;
