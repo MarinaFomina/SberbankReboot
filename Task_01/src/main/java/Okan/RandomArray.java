@@ -15,12 +15,8 @@ public class RandomArray {
                 maxz = ranar[i];
                 minz = ranar[i];
             }
-            if (ranar[i]<=minz) {
-                minz=ranar[i];
-            }
-            if (ranar[i]>=maxz) {
-                maxz=ranar[i];
-            }
+            if (ranar[i]<=minz) minz = ranar[i];
+            if (ranar[i]>=maxz) maxz = ranar[i];
             srdz = srdz + ranar[i];
             System.out.println(ranar[i]);
         }
