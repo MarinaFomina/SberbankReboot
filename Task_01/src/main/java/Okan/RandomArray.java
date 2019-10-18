@@ -1,7 +1,7 @@
 package main.java.Okan;
 
 public class RandomArray {
-
+//M
     private static final int COUNT = 9;
     public static void main(String[] args) {
         double[] ranar;
