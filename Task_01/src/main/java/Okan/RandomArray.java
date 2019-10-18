@@ -3,7 +3,6 @@ package main.java.Okan;
 public class RandomArray {
 
     private static final int COUNT = 9;
-
     public static void main(String[] args) {
         double[] ranar;
         double minz = 0.0;
@@ -16,7 +15,6 @@ public class RandomArray {
                 maxz = ranar[i];
                 minz = ranar[i];
             }
-
             if (ranar[i]<=minz) {
                 minz=ranar[i];
             }
@@ -27,15 +25,11 @@ public class RandomArray {
             System.out.println(ranar[i]);
         }
         srdz = srdz / COUNT;
-
         printResult(minz, maxz, srdz);
     }
-
     private static void printResult(double minz, double maxz, double srdz) {
         System.out.println("Минимальное: " + minz);
         System.out.println("Максимальное: " + maxz);
         System.out.println("Среднее: " + srdz);
     }
-
-
 }
