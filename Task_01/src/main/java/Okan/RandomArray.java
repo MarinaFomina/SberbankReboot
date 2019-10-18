@@ -1,16 +1,15 @@
 package main.java.Okan;
 
 public class RandomArray {
-//M
     private static final int COUNT = 9;
     public static void main(String[] args) {
-        double[] ranar;
-        double minz = 0.0;
-        double maxz = 0.0;
+        int[] ranar;
+        int minz = 0;
+        int maxz = 0;
         double srdz = 0.0;
-        ranar = new double[10];
+        ranar = new int[10];
         for (int i = 0; i <= COUNT; i++) {
-            ranar [i] = Math.random();
+            ranar [i] = (int) (Math.random() * 100);
             if (i==0) {
                 maxz = ranar[i];
                 minz = ranar[i];
@@ -23,7 +22,7 @@ public class RandomArray {
         srdz = srdz / COUNT;
         printResult(minz, maxz, srdz);
     }
-    private static void printResult(double minz, double maxz, double srdz) {
+    private static void printResult(int minz, int maxz, double srdz) {
         System.out.println("Минимальное: " + minz);
         System.out.println("Максимальное: " + maxz);
         System.out.println("Среднее: " + srdz);
