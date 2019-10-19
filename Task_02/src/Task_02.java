@@ -6,10 +6,10 @@ public class Task_02 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Select operations(or press q for exit): " + System.lineSeparator() +
-                "1. Summa" + System.lineSeparator() +
-                "2. Subtract" + System.lineSeparator() +
-                "3. Multiplication" + System.lineSeparator() +
-                "4. Division" + System.lineSeparator());
+                "+" + System.lineSeparator() +
+                "-" + System.lineSeparator() +
+                "*" + System.lineSeparator() +
+                "/" + System.lineSeparator());
 
         String operatSelect = scanner.next();
         if (operatSelect.equals("q")) {
@@ -23,14 +23,14 @@ public class Task_02 {
         System.out.print("Enter number two: ");
         double numberTwo = scanner.nextDouble();
 
-        switch (Integer.decode(operatSelect)) {
-            case 1:
+        switch (operatSelect) {
+            case "+":
                 return Double.toString(numberFirst + numberTwo);
-            case 2:
+            case "-":
                 return Double.toString(numberTwo - numberFirst);
-            case 3:
+            case "*":
                 return Double.toString(numberFirst * numberTwo);
-            case 4:
+            case "/":
                 return Double.toString(numberTwo / numberFirst);
         }
         return "q";
