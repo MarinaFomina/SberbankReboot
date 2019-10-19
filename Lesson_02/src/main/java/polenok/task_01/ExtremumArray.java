@@ -4,10 +4,10 @@ import static java.lang.Math.random;
 
 public class ExtremumArray {
 
-    private static final int dim = 5;
+    private static final int DIM = 5;
     public static void main(String[] args) {
         double max=0.0,min=1.0,summ=0.0;
-        double[] array = new double[dim];
+        double[] array = new double[DIM];
 
         System.out.print("Array = [");
         for (int i = 0; i < array.length; i++) {
@@ -26,6 +26,6 @@ public class ExtremumArray {
         System.out.println("Max = "+max);
         System.out.println("Min = "+min);
         System.out.println("Summ = "+summ);
-        System.out.println("Avg = "+(summ/dim));
+        System.out.println("Avg = "+(summ/DIM));
     }
 }
