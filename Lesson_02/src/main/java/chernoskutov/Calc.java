@@ -23,6 +23,7 @@ public class Calc {
         else if(oper.equals("-")){ return p1 - p2; }
         else if(oper.equals("/")){ if(p2 == 0) {System.out.print("division by zero! "); } return p1 / p2; }
         else if(oper.equals("*")){ return p1 * p2; }
+        else { System.out.println("check you input"); }
         return 0;
     }
 }
