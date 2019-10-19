@@ -1,5 +1,4 @@
 package main.java.tishchenko.task_01;
-
 import java.util.Arrays;
 
 public class Array {
@@ -11,14 +10,12 @@ public class Array {
         }
         Arrays.sort(array);
         System.out.println("min " + array[0]);
-        System.out.println("max " + array[array.length-1]);
-        if (array.length%2 == 0){
-            System.out.println("median " + array[array.length/2]+ " or " + array[(array.length/2)-1]);
-        }else {
-            System.out.println("median " + array[array.length/2]);
+        System.out.println("max " + array[array.length - 1]);
+        if (array.length % 2 == 0) {
+            System.out.println("median " + array[array.length / 2] + " or " + array[(array.length / 2) - 1]);
+        } else {
+            System.out.println("median " + array[array.length / 2]);
         }
-
-
     }
 }
 
