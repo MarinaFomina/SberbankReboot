@@ -3,31 +3,31 @@ import java.util.Scanner;
 
 public class Calc {
     public static void main(String[] args) {
-        String Exit= " ";
-        int FirstNumb;
-        int SecondNumb;
-        String Action;
-        double SecondNumbDouble;
-        while (!Exit.equals("n"))
+        String exit = "";
+        int firstNumb = 0;
+        int secondNumb = 0;
+        String action = "";
+        double secondNumbDouble=0.0;
+        while (!exit.equals("n"))
         {
             Scanner scanner = new Scanner(System.in);
             System.out.println("----===FirstCalc!===----");
             System.out.print("Enter FirstNumber: ");
-            FirstNumb = scanner.nextInt();
+            firstNumb = scanner.nextInt();
             System.out.print("Enter Action(+,-,*,/)");
-            Action = scanner.next();
-            if (Action.equals("exit")){break;};
+            action = scanner.next();
+            if (action.equals("exit")){break;};
             System.out.print("Enter SecondNumber: ");
-            SecondNumb = scanner.nextInt();
-            SecondNumbDouble = (double)SecondNumb;
-            if (Action.equals("+")){System.out.println("Result : " + (FirstNumb+SecondNumb));}
-            else if (Action.equals("-")){System.out.println("Result : " + (FirstNumb-SecondNumb));}
-            else if (Action.equals("*")){System.out.println("Result : " + (FirstNumb*SecondNumb));}
-            else if (Action.equals("/")){System.out.println("Result : " + (FirstNumb/SecondNumbDouble));}
+            secondNumb = scanner.nextInt();
+            secondNumbDouble = (double)secondNumb;
+            if (action.equals("+")){System.out.println("Result : " + (firstNumb+secondNumb));}
+            else if (action.equals("-")){System.out.println("Result : " + (firstNumb-secondNumb));}
+            else if (action.equals("*")){System.out.println("Result : " + (firstNumb*secondNumb));}
+            else if (action.equals("/")){System.out.println("Result : " + (firstNumb/secondNumbDouble));}
             else
                 {System.out.println("Error - Enter Incorrect action! Please enter the correct action");}
             System.out.println("Сontinue?(Enter 'y' to continue, 'n' to Exit");
-            Exit = scanner.next();
+            exit = scanner.next();
         }
     }
 }
