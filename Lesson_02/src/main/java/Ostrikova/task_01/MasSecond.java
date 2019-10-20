@@ -1,4 +1,4 @@
-package main.java.Ostrikova;
+package main.java.Ostrikova.task_01;
 
 public class MasSecond {
     public static void main(String[] args) {
