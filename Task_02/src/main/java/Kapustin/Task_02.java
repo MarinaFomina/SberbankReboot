@@ -1,3 +1,5 @@
+package main.java.Kapustin;
+
 import java.util.Scanner;
 
 public class Task_02 {
