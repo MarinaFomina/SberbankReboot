@@ -4,9 +4,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Task_02 {
+public class Task_01 {
     public static void main(String[] args) throws IOException {
-        Task_02 t = new Task_02();
+        Task_01 t = new Task_01();
         int[] mass = t.initAndWriteMas();
         t.printMas(mass);
         t.minValue(mass);
